@@ -271,7 +271,7 @@ function App() {
 
   const renderGame = () => {
     const isKing = socket.id === gameInfo.king;
-    const orderedPlayers = getOrderedPlayers();
+    const orderedPlayers = players;
     const minutes = Math.floor(timeLeft / 60);
     const seconds = timeLeft % 60;
 
